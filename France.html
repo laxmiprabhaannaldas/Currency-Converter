@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function France()
+{
+	var rup=document.getElementById("t1").value;
+	var s;
+	//FRANCE 1euro=77.42 INR
+	d=rup/77.42;
+	var con=rup+" INR = "+d+" EURO";
+	document.getElementById("t1").value=con;
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="t1" name="txt1" placeholder="Enter Rupees..">
+<input type="button" value="convert" onclick="France()">
+</form>
+</body>
+</html>

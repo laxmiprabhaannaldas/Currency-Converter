@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function Kuwait()
+{
+	var rup=document.getElementById("t1").value;
+	var s;
+	//kuwait=kuwaiti dinar=228.30rs
+	d=rup/228.30;
+	var con=rup+" INR = "+d+" KWD";
+	document.getElementById("t1").value=con;
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="t1" name="txt1" placeholder="Enter Rupees..">
+<input type="button" value="convert" onclick="Kuwait()">
+</form>
+</body>
+</html>

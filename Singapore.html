@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function Singa()
+{
+	var rup=document.getElementById("t1").value;
+	var s;
+	//singapore=singapore dollor=50.94rs
+	d=rup/50.94;
+	var con=rup+" INR = "+d+" SGD";
+	document.getElementById("t1").value=con;
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="t1" name="txt1" placeholder="Enter Rupees..">
+<input type="button" value="convert" onclick="Singa()">
+</form>
+</body>
+</html>

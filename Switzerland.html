@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function switzerland()
+{
+	var rup=document.getElementById("t1").value;
+	var s;
+	//switzerland=swiss franc=68.13rs
+	d=rup/68.13;
+	var con=rup+" INR = "+d+" Swiss Franc";
+	document.getElementById("t1").value=con;
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="t1" name="txt1" placeholder="Enter Rupees..">
+<input type="button" value="convert" onclick="switzerland()">
+</form>
+</body>
+</html>

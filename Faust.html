@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<style>
+#but
+			{
+				padding: 15px 32px;
+				height: 80px;
+				width:160px;
+				font-size: 25px;
+				margin: 10px;
+				margin-left:25px;
+				position:relative;
+				display: inline-block;
+				background-color: #d9d9d9;
+				border-radius: 12px;
+				-webkit-transition-duration: 0.4s; /* Safari */
+			  	transition-duration: 0.4s;
+			    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+			}
+			
+			#but:hover
+			{
+			  	background-color: #808080; 
+			  	color: white;
+			  	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+			}
+	
+
+			#t1
+			{
+				padding: 25px 40px;
+				width: 500px;
+				height: 80px;
+				margin-left: 150px;
+				margin-top: 50px;
+				text-align: center;
+				font-size:25px;
+			    background-color: #cccccc;
+			}
+			
+			.d1 {
+			  height: 100%;
+			  width: 200px;
+			  position: fixed;
+			  z-index: 1;
+			  top: 0;
+			  left: 0;
+			  background-color: #d9d9d9;
+			  overflow-x: hidden;
+			  padding-top: 20px;
+			}
+
+			.d1 a {
+			  padding: 6px 6px 6px 32px;
+			  text-decoration: none;
+			  font-size: 25px;
+			  color:#8c8c8c;
+			  display: block;
+			}
+
+			.d1 a:hover {
+			  color: #f1f1f1;
+			}
+
+			#d2
+			{
+				position:relative;
+				margin-left:220px; 
+				width:1100px;
+				height: auto;
+			}
+
+
+		</style>
+
+	<script>
+		
+		function Australia()
+		{
+			var rup=document.getElementById("t1").value;
+			var b;
+			//australia=australian dollar=48.61rs
+			if(rup==0)
+			{
+				alert("Please enter Rupees...");
+			}
+			else
+			{
+				b=Math.floor(rup/48.61);
+				var con=rup+" INR = "+b+" AUD";
+				document.getElementById("t1").value=con;
+			}
+		}
+
+	</script>
+
+</head>
+
+<body>
+
+	
+	<div id="d1" class="d1">
+			<a href="Us.html">United State</a><br>
+			<a href="Fcanada.html">Canada</a><br>
+			<a href="Fsinga.html">Singapore</a><br>
+			<a href="FFrance.html">France</a><br>
+			<a href="Fbritain.html">Great Britain</a><br>
+			<a href="Faust.html">Australia</a><br>
+			<a href="Fswitz.html">Switzerland</a><br>
+			<a href="Fkuwait.html">Kuwait</a><br>
+			<a href="Fnewz.html">New zeland</a><br>
+			<a href="Fbrazil.html">Brazil</a><br>
+	</div>
+	<div id="d2" class="d2">
+		<center><h1>AUSTRALIA</h1></center>
+			<marquee onmouseover="stop()" onmouseout="start()"><img src="Australia.jpg" height="355" width="570">	<img src="Austrailia.jpg" height="355" width="570"></marquee>
+			<center>
+			<form>
+				<input type="text" id="t1" name="txt1" placeholder="Enter Rupees..">
+				<input type="button" id="but" value="Convert"  onclick="Australia()">
+			</form>	
+			</center>
+			<p  align="justify">
+				<font size=5>
+					Australian money or Australian currency is the Australian dollar and consists of banknotes and coins. The Australian dollar divides into 100 cents.
+  					Prior to the changeover to the current decimal system the Australian currency or Australian money system was based on the British sterling system with the pound being the main unit. There were 12 pence to a shilling and 20 shillings to a pound.There were a lot of forms of currency used after the arrival of the first European settlers in 1788. Barter was used in the early years and payments in merchandise such as rum often replaced money.
+
+				</font>
+			</p>
+			
+		</div>
+
+	
+</body>
+</html>
